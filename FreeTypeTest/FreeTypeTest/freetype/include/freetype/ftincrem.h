@@ -82,7 +82,7 @@ FT_BEGIN_HEADER
    *   to use incremental objects with FreeType.
    *
    */
-  typedef struct FT_IncrementalRec_*  FT_Incremental;
+  typedef void * FT_Incremental;
 
 
   /**************************************************************************

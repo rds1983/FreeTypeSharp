@@ -46,5 +46,20 @@
 			FT_ENCODING_OLD_LATIN_2 = (((uint)('l') << 24) | ((uint)('a') << 16) | ((uint)('t') << 8) | (uint)('2')),
 			FT_ENCODING_APPLE_ROMAN = (((uint)('a') << 24) | ((uint)('r') << 16) | ((uint)('m') << 8) | (uint)('n'))
 		}
+
+		public const uint FT_GLYPH_FORMAT_NONE = (((uint)(0) << 24) | ((uint)(0) << 16) | ((uint)(0) << 8) | (uint)(0));
+		public const uint FT_GLYPH_FORMAT_COMPOSITE = (((uint)('c') << 24) | ((uint)('o') << 16) | ((uint)('m') << 8) | (uint)('p'));
+		public const uint FT_GLYPH_FORMAT_BITMAP = (((uint)('b') << 24) | ((uint)('i') << 16) | ((uint)('t') << 8) | (uint)('s'));
+		public const uint FT_GLYPH_FORMAT_OUTLINE = (((uint)('o') << 24) | ((uint)('u') << 16) | ((uint)('t') << 8) | (uint)('l'));
+		public const uint FT_GLYPH_FORMAT_PLOTTER = (((uint)('p') << 24) | ((uint)('l') << 16) | ((uint)('o') << 8) | (uint)('t'));
+
+		public enum FT_Glyph_Format_: uint
+		{
+			FT_GLYPH_FORMAT_NONE = (((uint)(0) << 24) | ((uint)(0) << 16) | ((uint)(0) << 8) | (uint)(0)),
+			FT_GLYPH_FORMAT_COMPOSITE = (((uint)('c') << 24) | ((uint)('o') << 16) | ((uint)('m') << 8) | (uint)('p')),
+			FT_GLYPH_FORMAT_BITMAP = (((uint)('b') << 24) | ((uint)('i') << 16) | ((uint)('t') << 8) | (uint)('s')),
+			FT_GLYPH_FORMAT_OUTLINE = (((uint)('o') << 24) | ((uint)('u') << 16) | ((uint)('t') << 8) | (uint)('l')),
+			FT_GLYPH_FORMAT_PLOTTER = (((uint)('p') << 24) | ((uint)('l') << 16) | ((uint)('o') << 8) | (uint)('t'))
+		}
 	}
 }

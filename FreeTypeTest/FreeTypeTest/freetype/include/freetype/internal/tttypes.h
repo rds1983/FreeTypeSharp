@@ -876,7 +876,7 @@ FT_BEGIN_HEADER
 
 
 #ifdef TT_CONFIG_OPTION_GX_VAR_SUPPORT
-  typedef struct GX_BlendRec_  *GX_Blend;
+  typedef void *GX_Blend;
 #endif
 
   /*************************************************************************/
@@ -1706,7 +1706,7 @@ FT_BEGIN_HEADER
 
 
   /* handle to execution context */
-  typedef struct TT_ExecContextRec_*  TT_ExecContext;
+  typedef void*  TT_ExecContext;
 
 
   /**************************************************************************
@@ -1717,7 +1717,7 @@ FT_BEGIN_HEADER
    * @description:
    *   A handle to a TrueType size object.
    */
-  typedef struct TT_SizeRec_*  TT_Size;
+  typedef void*  TT_Size;
 
 
   /* glyph loader structure */

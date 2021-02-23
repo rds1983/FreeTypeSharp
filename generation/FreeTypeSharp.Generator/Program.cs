@@ -22,6 +22,9 @@ namespace StbImageResizeSharp.Generator
 
 			data = data.Replace("((void*)(0))", "null");
 			data = data.Replace("((void *)(0))", "null");
+			data = data.Replace("union ", "");
+			data = data.Replace("volatile ", "");
+			data = data.Replace("int (FT_FaceRec_ *, unsigned int, unsigned int, int, long *)*", "FT_Driver_ClassRec_.get_advances_func");
 
 			return data;
 		}
@@ -44,17 +47,28 @@ namespace StbImageResizeSharp.Generator
 				SkipEnums = new string[]
 				{
 					"FT_Encoding_",
+					"FT_Glyph_Format_",
 				},
 				SkipStructs = new string[]
 				{
 					"FT_StreamDesc_",
 					"FT_StreamRec_",
+					"TT_Post_NamesRec_names",
+					"TT_Post_NamesRec_",
+					"FT_HashnodeRec_",
+					"FT_HashRec_",
+					"FT_Service_PsCMapsRec_",
+					"T1_Decoder_FuncsRec_",
+					"PS_BlendRec_",
+					"CFF_InternalRec_",
+					"CFF_Decoder_FuncsRec_",
 				},
 				SkipGlobalVariables = new string[]
 				{
 				},
 				SkipFunctions = new string[]
 				{
+					"FT_Raccess_Get_DataOffsets"
 				},
 				Classes = new string[]
 				{
@@ -69,6 +83,61 @@ namespace StbImageResizeSharp.Generator
 					"FT_StreamRec_",
 					"ft_raccess_guess_rec_",
 					"FT_CharMapRec_",
+					"FT_Raster_Params_",
+					"FT_GlyphSlotRec_",
+					"FT_Slot_InternalRec_",
+					"FT_SizeRec_",
+					"FT_CharMapRec_",
+					"FT_DriverRec_",
+					"FT_Driver_ClassRec_",
+					"FT_GlyphRec_",
+					"FT_Glyph_Class_",
+					"FT_Raster_Funcs_",
+					"FT_Incremental_FuncsRec_",
+					"FT_CMapRec_",
+					"FT_CMap_ClassRec_",
+					"FT_Face_InternalRec_",
+					"FT_Incremental_InterfaceRec_",
+					"FT_GlyphLoaderRec_",
+					"TT_FaceRec_",
+					"TT_LoaderRec_",
+					"SFNT_Interface_",
+					"FT_HashRec_",
+					"PSH_Globals_FuncsRec_",
+					"PSH_GlobalsRec_",
+					"T1_Hints_FuncsRec_",
+					"T2_Hints_FuncsRec_",
+					"FT_Service_PsCMapsRec_",
+					"PS_UnicodesRec_",
+					"PS_BlendRec_",
+					"CFF_FontRec_",
+					"CFF_SubFontRec_",
+					"PSHinter_Interface_",
+					"PS_Table_FuncsRec_",
+					"PS_TableRec_",
+					"PS_Parser_FuncsRec_",
+					"PS_ParserRec_",
+					"T1_FieldRec_",
+					"PS_Builder_",
+					"CFF_GlyphSlotRec_",
+					"FT_Generic_",
+					"PS_Decoder_",
+					"T1_BuilderRec_",
+					"T1_Decoder_FuncsRec_",
+					"T1_DecoderRec_",
+					"CFF_Builder_",
+					"CFF_SizeRec_",
+					"CFF_Decoder_",
+					"AFM_ParserRec_",
+					"T1_Builder_FuncsRec_",
+					"T1_CMap_ClassesRec_",
+					"AFM_Parser_FuncsRec_",
+					"CFF_Decoder_FuncsRec_",
+					"FT_Service_PropertiesRec_",
+					"FT_Service_SFNT_TableRec_",
+					"FT_Service_PsFontNameRec_",
+					"FT_Service_GlyphDictRec_",
+					"FT_GlyphLoadRec_",
 				},
 				GlobalArrays = new string[]
 				{

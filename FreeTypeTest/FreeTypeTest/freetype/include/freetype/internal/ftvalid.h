@@ -88,8 +88,6 @@ FT_BEGIN_HEADER
   /* validator structure */
   typedef struct  FT_ValidatorRec_
   {
-    ft_jmp_buf          jump_buffer; /* used for exception handling      */
-
     const FT_Byte*      base;        /* address of table in memory       */
     const FT_Byte*      limit;       /* `base' + sizeof(table) in memory */
     FT_ValidationLevel  level;       /* validation level                 */

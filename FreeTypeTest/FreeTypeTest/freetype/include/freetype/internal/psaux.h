@@ -1272,7 +1272,7 @@ FT_BEGIN_HEADER
   } AFM_Parser_FuncsRec;
 
 
-  typedef struct AFM_StreamRec_*  AFM_Stream;
+  typedef void*  AFM_Stream;
 
 
   /**************************************************************************

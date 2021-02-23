@@ -184,14 +184,14 @@ FT_BEGIN_HEADER
    *
    */
 
-#define FT_TRACE0( varformat )  FT_TRACE( 0, varformat )
-#define FT_TRACE1( varformat )  FT_TRACE( 1, varformat )
-#define FT_TRACE2( varformat )  FT_TRACE( 2, varformat )
-#define FT_TRACE3( varformat )  FT_TRACE( 3, varformat )
-#define FT_TRACE4( varformat )  FT_TRACE( 4, varformat )
-#define FT_TRACE5( varformat )  FT_TRACE( 5, varformat )
-#define FT_TRACE6( varformat )  FT_TRACE( 6, varformat )
-#define FT_TRACE7( varformat )  FT_TRACE( 7, varformat )
+#define FT_TRACE0( varformat )
+#define FT_TRACE1( varformat )
+#define FT_TRACE2( varformat )
+#define FT_TRACE3( varformat )
+#define FT_TRACE4( varformat )
+#define FT_TRACE5( varformat )
+#define FT_TRACE6( varformat )
+#define FT_TRACE7( varformat )
 
 
   /**************************************************************************

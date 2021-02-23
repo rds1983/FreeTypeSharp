@@ -37,7 +37,7 @@ FT_BEGIN_HEADER
   /*************************************************************************/
   /*************************************************************************/
 
-  typedef struct PSH_GlobalsRec_*  PSH_Globals;
+  typedef void *  PSH_Globals;
 
   typedef FT_Error
   (*PSH_Globals_NewFunc)( FT_Memory     memory,
@@ -100,7 +100,7 @@ FT_BEGIN_HEADER
    *   PostScript hinter.
    *
    */
-  typedef struct T1_HintsRec_*  T1_Hints;
+  typedef void *  T1_Hints;
 
 
   /**************************************************************************
@@ -387,7 +387,7 @@ FT_BEGIN_HEADER
    *   Postscript hinter.
    *
    */
-  typedef struct T2_HintsRec_*  T2_Hints;
+  typedef void *  T2_Hints;
 
 
   /**************************************************************************
